@@ -1,6 +1,11 @@
 .app {
   height: 100%;
+  width: 100%;
+
+
 }
+
+
 
 /* navbar */
 
@@ -22,4 +27,71 @@
   color: white;
   text-decoration: none;
   
+}
+
+/* hero */
+
+.hero-title {
+  font-size: 72px;
+  font-weight: 900;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.hero-description {
+  font-size: 30px;
+  color: white;
+}
+
+.hero-button .contact-btn {
+  padding: 10px 20px;
+}
+
+.hero-img {
+  width: 80%;
+  z-index: 1;
+  clip-path: circle(43%);
+
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+@media screen and (max-width: 830px){
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 50px;
+    font-weight: 900;
+  }
+
+  .hero-description{
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .hero-img {
+    width: 68%;
+  }
+
 }
