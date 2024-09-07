@@ -1,0 +1,25 @@
+.app {
+  height: 100%;
+}
+
+/* navbar */
+
+.nav-title {
+  font-size: 30px;
+  font-weight: 600;
+  /* text-decoration: none;
+  color: var(--color-text); */
+}
+
+.mnavbar-nav {
+  display: flex;
+  gap: 47px;
+  list-style: none;
+}
+
+.nav-item a {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  
+}
