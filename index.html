@@ -6,13 +6,13 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./bootstrap-5.3.3/bootstrap-5.3.3/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.min.css">
-  <title>peste</title>
+  <title>Jomar's Web</title>
 </head>
 <body>
   <div class="app bg-info w-100">
 
     <div>
-      <nav class="navbar navbar-expand-md d-flex align-items-center position-relative justify-content-between pt-3  my-0 mx-3">
+      <nav class="navbar navbar-expand-md d-flex align-items-center position-relative justify-content-between pt-3 my-0 mx-3">
         <a class="nav-title text-decoration-none text-white" href="/">Jomar's Web</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,8 +48,6 @@
                 My CV
             </a>
           </div>
-          <div class="top-blur"></div>
-          <div class="bottom-blur"></div>
         </div>
       </div>
     </section>
@@ -57,61 +55,71 @@
     <!-- About Section -->
     <section id="about" class="about container mt-5 bg-secondary pt-5">
       <div class="row">
-        <!-- Left-side Navigation (Responsive to stack vertically on small screens) -->
-        <div class="col-lg-3 col-md-4 col-sm-12 mb-4 ">
+        <!-- Left-side Navigation -->
+        <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
           <nav id="about-nav" class="nav flex-column">
-            <a class="nav-link" href="#overview">Overview</a>
-            <a class="nav-link" href="#work-education">Work & Education</a>
-            <a class="nav-link" href="#places-lived">Places Lived</a>
-            <a class="nav-link" href="#contact-info">Contact Info</a>
-            <a class="nav-link" href="#family-relationship">Family & Relationship</a>
-            <a class="nav-link" href="#details-about-you">Details About You</a>
-            <a class="nav-link" href="#life-events">Life Events</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="showSection('overview')">Overview</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="showSection('work-education')">Work & Education</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="showSection('places-lived')">Places Lived</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="showSection('contact-info')">Contact Info</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="showSection('family-relationship')">Family & Relationship</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="showSection('details-about-you')">Details About You</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="showSection('life-events')">Life Events</a>
           </nav>
         </div>
 
-        <!-- Right-side Content (Stays next to navigation on large screens, stacks below on small screens) -->
+        <!-- Right-side Content -->
         <div class="col-lg-9 col-md-8 col-sm-12">
-          <div id="overview">
+          <div id="overview" class="section active">
             <h2>Overview</h2>
             <p>This section contains an overview of your profile.</p>
           </div>
-          <div id="work-education" class="mt-5">
+          <div id="work-education" class="section">
             <h2>Work & Education</h2>
             <p>Details about your work and education.</p>
           </div>
-          <div id="places-lived" class="mt-5">
+          <div id="places-lived" class="section">
             <h2>Places Lived</h2>
             <p>Details about the places you've lived.</p>
           </div>
-          <div id="contact-info" class="mt-5">
+          <div id="contact-info" class="section">
             <h2>Contact Info</h2>
             <p>Details about your contact information.</p>
           </div>
-          <div id="family-relationship" class="mt-5">
+          <div id="family-relationship" class="section">
             <h2>Family & Relationship</h2>
             <p>Details about your family and relationships.</p>
           </div>
-          <div id="details-about-you" class="mt-5">
+          <div id="details-about-you" class="section">
             <h2>Details About You</h2>
             <p>Additional details about yourself.</p>
           </div>
-          <div id="life-events" class="mt-5">
+          <div id="life-events" class="section">
             <h2>Life Events</h2>
             <p>Details about significant life events.</p>
           </div>
         </div>
       </div>
     </section>
-
-
-
-
-
-
   </div>
+  
   <script src="./bootstrap-5.3.3/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
   <script src="./main.js"></script>
-  
+  <script>
+    // JavaScript function to handle section display
+    function showSection(sectionId) {
+      // Hide all sections
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+
+      // Show the selected section
+      document.getElementById(sectionId).classList.add('active');
+    }
+
+    // Initialize by showing only the "Overview" section
+    document.addEventListener('DOMContentLoaded', () => {
+      showSection('overview');
+    });
+  </script>
 </body>
 </html>
