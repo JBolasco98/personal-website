@@ -13,22 +13,21 @@
 <body class="bg-info">
   <div class="app bg-info w-100 ">
 
-    <div>
-      <nav class="navbar navbar-expand-md d-flex align-items-center position-relative justify-content-between pt-3 my-0 mx-3">
-        <a class="nav-title text-decoration-none text-white" href="/">Jomar's Web</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav-menu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about" data-section="about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <nav class="navbar navbar-expand-md d-flex align-items-center position-relative justify-content-between pt-3 my-0 mx-3">
+      <a class="nav-title text-decoration-none text-white" href="/">Jomar's Web</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
 
     <section class="hero container mt-3 mx-6">
       <div class="row d-flex align-items-center">
@@ -180,26 +179,29 @@
       </div>
       </div>
 
-      <div class="experience-section container py-5 mt-3" id="experience">
-        <h2 class="text-white mb-4">Work Experience</h2>
-        <div class="experience-item d-flex">
-          <div class="experience-text">
-            <h3 class="company-name">Millenium Gallery Motors, Inc.</h3>
-            <p class="company-location">(Baan km4, Butuan City)</p>
+      <div class="experience-section container py-5 mt-3">
+        <h2 class="text-white mb-4 text-center">Work Experience</h2>
+        <div class="experience-item row align-items-center p-4 bg-light rounded-3 shadow">
+          
+          <!-- Work experience text -->
+          <div class="col-md-7 col-sm-12 experience-text">
+            <h3 class="company-name text-primary">Millenium Gallery Motors, Inc.</h3>
+            <p class="company-location text-muted"><i class="fas fa-map-marker-alt"></i> Baan km4, Butuan City</p>
             <p class="period-covered"><strong>Period Covered:</strong> January 6, 2020 – January 20, 2020</p>
             <p class="job-title"><strong>Role:</strong> Accounting Department (Intern)</p>
-            <ul class="job-description">
-              <li>Insurance monitoring, updating, and encoding in the system</li>
-              <li>Gate Pass monitoring and recording to the system</li>
-              <li>Checking invoices and other billings</li>
-              <li>Repair order monitoring in ERA System</li>
-              <li>Checking daily time records of Sherlock Agency</li>
+            <ul class="job-description list-unstyled">
+              <li><i class="fas fa-check-circle text-success"></i> Insurance monitoring, updating, and encoding in the system</li>
+              <li><i class="fas fa-check-circle text-success"></i> Gate Pass monitoring and recording to the system</li>
+              <li><i class="fas fa-check-circle text-success"></i> Checking invoices and other billings</li>
+              <li><i class="fas fa-check-circle text-success"></i> Repair order monitoring in ERA System</li>
+              <li><i class="fas fa-check-circle text-success"></i> Checking daily time records of Sherlock Agency</li>
             </ul>
           </div>
-          <div class="experience-images ms-auto mt-3">
-            <img src="./images/Nissan-Butuan.jpg" alt="Image related to work experience" class="img-fluid rounded mb-2">
-            <img src="./images/ojt.jpg" alt="Image related to work experience" class="img-fluid rounded">
-            <!-- Add more images as needed -->
+          
+          <!-- Work experience images -->
+          <div class="col-md-5 col-sm-12 experience-images text-center mt-3 mt-md-0">
+            <img src="./images/Nissan-Butuan.jpg" alt="Millenium Gallery Motors" class="img-fluid rounded mb-3 shadow-sm" style="max-height: 250px;">
+            <img src="./images/ojt.jpg" alt="Internship" class="img-fluid rounded shadow-sm" style="max-height: 250px;">
           </div>
         </div>
       </div>
@@ -210,28 +212,7 @@
     
     
     
-    <section id="experience" class="experience-section container py-5" style="display: none;">
-      <h2 class="text-white mb-4">Work Experience</h2>
-      <div class="experience-item">
-        <h3 class="company-name">Millenium Gallery Motors, Inc.</h3>
-        <p class="company-location">(Baan km4, Butuan City)</p>
-        <p class="period-covered"><strong>Period Covered:</strong> January 6, 2020 – January 20, 2020</p>
-        <p class="job-title"><strong>Role:</strong> Accounting Department (Intern)</p>
-        <ul class="job-description">
-          <li>Insurance monitoring, updating, and encoding in the system</li>
-          <li>Gate Pass monitoring and recording to the system</li>
-          <li>Checking invoices and other billings</li>
-          <li>Repair order monitoring in ERA System</li>
-          <li>Checking daily time records of Sherlock Agency</li>
-        </ul>
-        <!-- Add your images here -->
-        <div class="experience-images mt-3">
-          <img src="./images/Nissan-Butuan.jpg" alt="Image related to work experience" class="img-fluid rounded">
-          <img src="./images/ojt.jpg" alt="Image related to work experience" class="img-fluid rounded">
-          <!-- Add more images as needed -->
-        </div>
-      </div>
-    </section>
+
     
     
 
