@@ -1,13 +1,20 @@
-function showSection(sectionId) {
-  // Hide all sections
-  const sections = document.querySelectorAll('.section');
-  sections.forEach(section => section.classList.remove('active'));
+// Ensure the script runs after the DOM is fully loaded
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.nav-link[href="#about"]').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
 
-  // Show the selected section
-  document.getElementById(sectionId).classList.add('active');
-}
+    const profilePic = document.getElementById('nav-profile-pic');
+    const heroSection = document.querySelector('.hero');
+    const aboutSection = document.getElementById('about');
 
-// Initialize by showing only the "Overview" section
-document.addEventListener('DOMContentLoaded', () => {
-  showSection('overview');
+    // Show profile picture beside nav-brand
+    profilePic.classList.remove('d-none');
+
+    // Hide hero section
+    heroSection.classList.add('d-none');
+
+    // Show about section
+    aboutSection.classList.remove('d-none');
+  });
 });
+
