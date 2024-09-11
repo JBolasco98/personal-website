@@ -180,3 +180,91 @@
   object-fit: contain; /* Ensures the image maintains its aspect ratio */
   margin: 0 auto; /* Centers the image horizontally */
 }
+
+/* experience */
+
+/* Experience Section */
+.experience-section {
+  background-color: #343a40;
+  border-radius: 10px;
+  color: white;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.company-location {
+  font-style: italic;
+}
+
+.period-covered, .job-title {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.job-description {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.school-logo {
+  width: 150px;
+  height: 150px;
+  /* border: 5px solid #fff; */
+  object-fit: cover;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);   */
+}
+
+.bg-image {
+  background-image: url('./images/csulibrary.jpg'); /* Replace with your image path */
+  background-size: cover; /* Adjusts the size of the image to cover the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: white; /* Optional: Change text color for better visibility */
+}
+
+.bg-image2 {
+  background-image: url('./images/anhsbg.jpg'); /* Replace with your image path */
+  background-size: cover; /* Adjusts the size of the image to cover the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: white; /* Optional: Change text color for better visibility */
+}
+
+
+.school-info {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+
+
+
+/* experince */
+.experience-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between images */
+}
+
+.experience-images img {
+  width: 100%; /* Adjust based on your design */
+  max-width: 200px; /* Set a max width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.experience-section h2,
+.experience-section .company-name,
+.experience-section .company-location,
+.experience-section .period-covered,
+.experience-section .job-title,
+.experience-section .job-description {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add this line */
+}
+
