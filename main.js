@@ -13,3 +13,8 @@ navLinks.forEach(link => {
     document.getElementById(targetSectionId).style.display = 'block';
   });
 });
+
+function openModal(imgElement) {
+  var modalImage = document.getElementById("modalImage");
+  modalImage.src = imgElement.src; // Set the image source in the modal
+}
