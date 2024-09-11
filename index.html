@@ -54,8 +54,8 @@
       </div>
     </section>
 
-    <section id="about" class="about-section container py-5">
-      <div class="row d-flex align-items-center">
+    <section id="about" class="about-section container py-5 bg-secondary ">
+      <div class="row d-flex align-items-center bg-white rounded p-3">
         <!-- Profile Picture -->
         <div class="col-md-4 text-center mb-4 mb-md-0">
           <img src="./images/hero/BOLASCO, JOMAR.png" alt="Jomar Profile Picture" class="about-img rounded-circle">
@@ -68,32 +68,62 @@
         </div>
       </div>
     
-      <!-- Skills Section Below Profile Picture -->
-      <div class="skills-section mt-5">
-        <h3>Skills</h3>
-        <div class="skills-list d-flex flex-wrap">
-          <div class="skill-item d-flex align-items-center mb-3 me-4">
-            <i class="fab fa-html5 skill-icon"></i>
-            <span class="ms-2">HTML</span>
-          </div>
-          <div class="skill-item d-flex align-items-center mb-3 me-4">
-            <i class="fab fa-css3-alt skill-icon"></i>
-            <span class="ms-2">CSS</span>
-          </div>
-          <div class="skill-item d-flex align-items-center mb-3 me-4">
-            <i class="fab fa-js skill-icon"></i>
-            <span class="ms-2">JavaScript</span>
-          </div>
-          <div class="skill-item d-flex align-items-center mb-3 me-4">
-            <i class="fab fa-react skill-icon"></i>
-            <span class="ms-2">React.js</span>
-          </div>
-          <div class="skill-item d-flex align-items-center mb-3 me-4">
-            <i class="fab fa-node-js skill-icon"></i>
-            <span class="ms-2">Node.js</span>
-          </div>
+<!-- Skills Section with Carousel -->
+<div class="row mt-5 bg-dark rounded-5 g-5">
+  <!-- Skills on the left -->
+  <div class="col-md-6 bg-dark rounded-5">
+    <h3 class="text-white">Skills</h3>
+    <div class="skills-list d-flex flex-wrap">
+      <div class="skill-item d-flex align-items-center mb-3 me-4">
+        <i class="fab fa-html5 skill-icon"></i>
+        <span class="ms-2">HTML</span>
+      </div>
+      <div class="skill-item d-flex align-items-center mb-3 me-4">
+        <i class="fab fa-css3-alt skill-icon"></i>
+        <span class="ms-2">CSS</span>
+      </div>
+      <div class="skill-item d-flex align-items-center mb-3 me-4">
+        <i class="fab fa-js skill-icon"></i>
+        <span class="ms-2">JavaScript</span>
+      </div>
+      <div class="skill-item d-flex align-items-center mb-3 me-4">
+        <i class="fab fa-react skill-icon"></i>
+        <span class="ms-2">React.js</span>
+      </div>
+      <div class="skill-item d-flex align-items-center mb-3 me-4">
+        <i class="fab fa-node-js skill-icon"></i>
+        <span class="ms-2">Node.js</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel on the right -->
+  <div class="col-md-6 ">
+    <h3 class="text-white">Certificates</h3>
+    <div id="certificatesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/html.png" class="d-block w-100 carousel-img" alt="HTML Certificate">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/css.png" class="d-block w-100 carousel-img" alt="CSS Certificate">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/java.png" class="d-block w-100 carousel-img" alt="JavaScript Certificate">
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#certificatesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#certificatesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+
       
       <!-- Additional Information Section -->
       <div class="row mt-5">
