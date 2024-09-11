@@ -1,20 +1,17 @@
-// Ensure the script runs after the DOM is fully loaded
-window.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.nav-link[href="#about"]').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent default link behavior
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('.section');
 
-    const profilePic = document.getElementById('nav-profile-pic');
-    const heroSection = document.querySelector('.hero');
-    const aboutSection = document.getElementById('about');
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetSection = e.target.getAttribute('data-section');
 
-    // Show profile picture beside nav-brand
-    profilePic.classList.remove('d-none');
+    // Hide all sections
+    sections.forEach(section => {
+      section.style.display = 'none';
+    });
 
-    // Hide hero section
-    heroSection.classList.add('d-none');
-
-    // Show about section
-    aboutSection.classList.remove('d-none');
+    // Show the target section
+    document.getElementById(targetSection).style.display = 'block';
   });
 });
-
