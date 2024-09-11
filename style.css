@@ -255,7 +255,7 @@
 
 .experience-images img {
   width: 100%; /* Adjust based on your design */
-  max-width: 200px; /* Set a max width */
+  max-width: 250px; /* Set a max width */
   height: auto; /* Maintain aspect ratio */
 }
 
