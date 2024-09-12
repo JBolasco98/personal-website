@@ -7,12 +7,17 @@
   <link rel="stylesheet" href="./bootstrap-5.3.3/bootstrap-5.3.3/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
 
-  <title>peste</title>
+
+  <title>Jomar's Website</title>
 </head>
 <body class="bg-info">
+  <!-- nav section -->
   <div class="app bg-info w-100 ">
-
     <nav class="navbar navbar-expand-md d-flex align-items-center position-relative justify-content-between pt-3 my-0 mx-3">
       <a class="nav-title text-decoration-none text-white" href="/">Jomar's Web</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,14 +33,12 @@
       </div>
     </nav>
     
-
+    <!-- hero -->
     <section class="hero container mt-3 mx-6">
       <div class="row d-flex align-items-center">
-         <!-- Image Column -->
          <div class="col-md-6 col-sm-12 text-center">
-           <img src="./images/hero/BOLASCO, JOMAR.png" alt="profile pic" class="hero-img">
+           <img src="./images/BOLASCO, JOMAR.png" alt="profile pic" class="hero-img">
          </div>
-        <!-- Text Column -->
         <div class="col-md-6 col-sm-12 mb-3">
           <h1 class="hero-title mb-3">Hi, I'm Jomar</h1>
           <p class="hero-description mb-3">
@@ -53,24 +56,21 @@
       </div>
     </section>
 
+    <!-- about -->
     <section id="about" class="about-section container py-5 bg-secondary ">
       <div class="row d-flex align-items-center bg-white rounded p-3">
-        <!-- Profile Picture -->
         <div class="col-md-4 text-center mb-4 mb-md-0">
           <img src="./images/gradpic.jpg" alt="Jomar Profile Picture" class="about-img rounded-circle">
         </div>
-        
-        <!-- Name and Alias -->
         <div class="col-md-8">
           <h2 class="about-name mb-2">Jomar Lupos Bolasco <span class="alias-name">(aka Jboy)</span></h2>
           <p class="about-intro mb-4">Aspiring full-stack developer with a passion for creating dynamic and responsive web applications. Always learning and exploring new technologies to improve my skillset.</p>
         </div>
       </div>
     
-<!-- Skills Section with Carousel -->
-<div class="row mt-4 bg-dark rounded-5 g-5">
-  <!-- Skills on the left -->
-  <div class="col-md-4 bg-dark rounded-5">
+  <div class="row mt-4 bg-dark rounded-5 g-5">
+    <!-- skills -->
+  <div class="col-md-4">
     <h3 class="text-white">Skills</h3>
     <div class="skills-list d-flex flex-wrap">
       <div class="skill-item d-flex align-items-center mb-3 me-4">
@@ -94,13 +94,12 @@
         <span class="ms-2">Node.js</span>
       </div>
       <div class="skill-item d-flex align-items-center mb-3 me-4">
-        <i class="fas fa-database skill-icon"></i> <!-- Add icon for PostgreSQL -->
+        <i class="fas fa-database skill-icon"></i> 
         <span class="ms-2">PostgreSQL</span>
       </div>
     </div>
   </div>
-
-  <!-- Carousel on the right -->
+  <!-- certificate -->
   <div class="col-md-8">
     <h3 class="text-white">Certificates</h3>
     <div id="certificatesCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -115,110 +114,91 @@
           <img src="./images/java.png" class="d-block w-100 carousel-img" alt="JavaScript Certificate" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal(this)">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#certificatesCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#certificatesCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#certificatesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#certificatesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     </div>
   </div>
-</div>
 
-
-<!-- Modal for viewing images -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content">
-      <div class="modal-body">
-        <img id="modalImage" src="" alt="Modal Image" class="img-fluid" style="width: 100%;">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img id="modalImage" src="" alt="Modal Image" class="img-fluid" style="width: 100%;">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-
-      
-      <!-- Additional Information Section -->
-      <div class="row mt-5 ">
-        <div class="col-12 ">
-          <h3 class="mt-5 bg-dark p-1 text-white rounded-4">Educational Background</h3>
-          <div class="row align-items-center mt-3  bg-image">
-            <!-- School Logo Column -->
-            <div class="col-md-4 text-center mb-4 mb-md-0">
-              <img src="./images/Caraga_State_University logo.png" alt="Caraga State University Logo" class="school-logo img-fluid">
-            </div>
-            <!-- Educational Information Column -->
-            <div class="school-info col-md-8">
-              <p class="mb-1"><strong>Level:</strong> Undergraduate</p>
-              <p class="mb-1"><strong>Name of School/Degree:</strong> Caraga State University</p>
-              <p class="mb-1"><strong>Date Graduated:</strong> On-going</p>
-              <p><strong>Location:</strong> Brgy. Ampayon, Butuan City, PH</p>
-              <p><strong>Program:</strong> Bachelor of Science in Information Technology</p>
-            </div>
+  <!-- educational background -->
+  <div class="row mt-5 ">
+    <div class="col-12 ">
+      <h3 class="mt-5 bg-dark p-1 text-white rounded-4">Educational Background</h3>
+      <div class="row align-items-center mt-3  bg-image">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="./images/Caraga_State_University logo.png" alt="Caraga State University Logo" class="school-logo img-fluid">
+        </div>
+        <div class="school-info col-md-8">
+          <p class="mb-1"><strong>Level:</strong> Undergraduate</p>
+          <p class="mb-1"><strong>Name of School/Degree:</strong> Caraga State University</p>
+          <p class="mb-1"><strong>Date Graduated:</strong> On-going</p>
+          <p><strong>Location:</strong> Brgy. Ampayon, Butuan City, PH</p>
+          <p><strong>Program:</strong> Bachelor of Science in Information Technology</p>
         </div>
       </div>
-      </div>
+    </div>
+  </div>
 
-      <div class="row mt-1 ">
-        <div class="col-12 ">
-          <div class="row align-items-center mt-3  bg-image2">
-            <!-- School Logo Column -->
-            <div class="col-md-4 text-center mb-4 mb-md-0">
-              <img src="./images/anhslogo.jpg" alt="anhs Logo" class="school-logo img-fluid rounded-circle">
-            </div>
-            <!-- Educational Information Column -->
-            <div class="school-info col-md-8">
-              <p class="mb-1"><strong>Level:</strong> Graduate</p>
-              <p class="mb-1"><strong>Name of School/Degree:</strong> Agusan National High School (Senior High School)</p>
-              <p class="mb-1"><strong>Date Graduated:</strong> 2020</p>
-              <p><strong>Location:</strong> A.D. Curato St, Butuan City, Butuan City, PH</p>
-              <p><strong>Program:</strong> Acountancy Business and Management</p>
-            </div>
+  <div class="row mt-1 ">
+    <div class="col-12 ">
+      <div class="row align-items-center mt-3  bg-image2">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="./images/anhslogo.jpg" alt="anhs Logo" class="school-logo img-fluid rounded-circle">
+        </div>
+        <div class="school-info col-md-8">
+          <p class="mb-1"><strong>Level:</strong> Graduate</p>
+          <p class="mb-1"><strong>Name of School/Degree:</strong> Agusan National High School (Senior High School)</p>
+          <p class="mb-1"><strong>Date Graduated:</strong> 2020</p>
+          <p><strong>Location:</strong> A.D. Curato St, Butuan City, Butuan City, PH</p>
+          <p><strong>Program:</strong> Acountancy Business and Management</p>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- experience -->
+  <div class="experience-section container py-5 mt-3 bg-dark">
+    <h2 class="text-white mb-4 text-center">Work Experience</h2>
+    <div class="experience-item row align-items-center p-4 bg-light rounded-3 shadow">
+      <div class="col-md-6 col-sm-12 experience-text">
+        <h3 class="company-name text-primary">Millenium Gallery Motors, Inc.</h3>
+        <p class="company-location text-muted"><i class="fas fa-map-marker-alt"></i> Baan km4, Butuan City</p>
+        <p class="period-covered"><strong>Period Covered:</strong> January 6, 2020 - January 20, 2020</p>
+        <p class="job-title"><strong>Role:</strong> Accounting Department (Intern)</p>
+        <ul class="job-description list-unstyled">
+          <li><i class="fas fa-check-circle text-success"></i> Insurance monitoring, updating, and encoding in the system</li>
+          <li><i class="fas fa-check-circle text-success"></i> Gate Pass monitoring and recording to the system</li>
+          <li><i class="fas fa-check-circle text-success"></i> Checking invoices and other billings</li>
+          <li><i class="fas fa-check-circle text-success"></i> Repair order monitoring in ERA System</li>
+          <li><i class="fas fa-check-circle text-success"></i> Checking daily time records of Sherlock Agency</li>
+        </ul>
       </div>
-
-      <div class="experience-section container py-5 mt-3 bg-dark">
-        <h2 class="text-white mb-4 text-center">Work Experience</h2>
-        <div class="experience-item row align-items-center p-4 bg-light rounded-3 shadow">
-          
-          <!-- Work experience text -->
-          <div class="col-md-6 col-sm-12 experience-text">
-            <h3 class="company-name text-primary">Millenium Gallery Motors, Inc.</h3>
-            <p class="company-location text-muted"><i class="fas fa-map-marker-alt"></i> Baan km4, Butuan City</p>
-            <p class="period-covered"><strong>Period Covered:</strong> January 6, 2020 – January 20, 2020</p>
-            <p class="job-title"><strong>Role:</strong> Accounting Department (Intern)</p>
-            <ul class="job-description list-unstyled">
-              <li><i class="fas fa-check-circle text-success"></i> Insurance monitoring, updating, and encoding in the system</li>
-              <li><i class="fas fa-check-circle text-success"></i> Gate Pass monitoring and recording to the system</li>
-              <li><i class="fas fa-check-circle text-success"></i> Checking invoices and other billings</li>
-              <li><i class="fas fa-check-circle text-success"></i> Repair order monitoring in ERA System</li>
-              <li><i class="fas fa-check-circle text-success"></i> Checking daily time records of Sherlock Agency</li>
-            </ul>
-          </div>
-          
-          <!-- Work experience images -->
-          <div class="col-md-6 col-sm-12 experience-images text-center mt-3 mt-md-0">
-            <img src="./images/Nissan-Butuan.jpg" alt="Millenium Gallery Motors" class="img-fluid rounded mb-3 shadow-sm" style="max-height: 250px;">
-            <img src="./images/ojt.jpg" alt="Internship" class="img-fluid rounded shadow-sm" style="max-height: 250px;">
-          </div>
-        </div>
+      <div class="col-md-6 col-sm-12 experience-images text-center mt-3 mt-md-0">
+        <img src="./images/Nissan-Butuan.jpg" alt="Millenium Gallery Motors" class="img-fluid rounded mb-3 shadow-sm" style="max-height: 250px;">
+        <img src="./images/ojt.jpg" alt="Internship" class="img-fluid rounded shadow-sm" style="max-height: 250px;">
       </div>
-
-
-      
-        <!-- Project Section -->
-        <div id="project" class="project-section py-5 mt-3 bg-dark rounded">
-          <h3 class="text-white text-center mb-4">Projects</h3>
-      
-
-  <!-- First Project: App -->
+    </div>
+  </div>
+  <!-- Project Section -->
+  <div id="project" class="project-section py-5 mt-3 bg-dark rounded">
+    <h3 class="text-white text-center mb-4">Projects</h3>
   <div class="project-item row align-items-center p-4 bg-light rounded-3 shadow mb-4">
     <div class="col-md-6 text-center">
       <video class="w-100 rounded shadow-sm" loop muted autoplay>
@@ -243,12 +223,11 @@
     </div>
   </div>
 
-  <!-- Second Project: Video -->
   <div class="project-item row align-items-center p-4 bg-light rounded-3 shadow">
     <div class="col-md-6 text-center">
       <a href="https://www.youtube.com/watch?v=XeNT3jCby5A&t=135s" target="_blank">
         <video class="w-100" loop muted autoplay>
-          <source src="./images/hero/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+          <source src="./images/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </a>
@@ -257,28 +236,25 @@
       <h4 class="project-title">The Late Film</h4>
       <h5 class="project-director">Directed By: Jomar Bolasco</h5>
       <p class="project-description">
-        I’m thrilled to share that our film won <strong>4th place</strong> out of <strong>16 sections</strong> in our school film contest! Given that we had only <strong>two days</strong> to prepare, I am incredibly proud of what we accomplished. In that limited time, I was able to brainstorm a creative idea that significantly shaped our film. This experience taught me invaluable lessons about teamwork and the power of quick thinking.
+        I'm thrilled to share that our film won <strong>4th place</strong> out of <strong>16 sections</strong> in our school film contest! Given that we had only <strong>two days</strong> to prepare, I am incredibly proud of what we accomplished. In that limited time, I was able to brainstorm a creative idea that significantly shaped our film. This experience taught me invaluable lessons about teamwork and the power of quick thinking.
       </p>
       <a href="https://www.youtube.com/watch?v=XeNT3jCby5A&t=135s" target="_blank" class="btn btn-primary mt-3">Click to Watch</a>
     </div>
   </div>
-            
-          
-      
-      <!-- Demo HTML Popup -->
-      <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-          <div class="modal-content">
-            <div class="modal-body">
-              <iframe src="./demo.html" style="width: 100%; height: 500px;"></iframe>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
+
+  <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe src="./demo.html" style="width: 100%; height: 500px;"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
+  div>
 
     <div>
       <footer class="footer mt-5 p-5">
@@ -293,28 +269,10 @@
         </div>
       </footer>
     </div>
-    
+  </div>
+</section>
 
-
-    </section>
-    
-    
-    
- 
-
-    
-    
-
-    
-    
-
-
-
-
-
-  <!-- </div> -->
   <script src="./bootstrap-5.3.3/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
   <script src="./main.js"></script>
-  
 </body>
 </html>

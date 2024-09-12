@@ -9,8 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 /* navbar */
 
 .nav-title {
@@ -107,7 +105,6 @@ html {
 }
 
 .about-section {
-  /* background-color: #007bff; */
   border-radius: 10px;
 }
 
@@ -162,16 +159,16 @@ html {
 
 .skill-icon {
   width: 48px;
-  height: 48px; /* Set the icon size */
-  font-size: 48px; /* Set the icon size */
-  color: #007bff; /* Change this to your preferred color */
+  height: 48px; 
+  font-size: 48px;
+  color: #007bff;
 }
 
 .skill-description {
-  font-size: 18px; /* Increase font size for description */
+  font-size: 18px; 
 }
 
-/* Optional: Add some hover effects */
+
 .skill-item:hover {
   background-color: rgba(0, 123, 255, 0.1);
   border-radius: 5px;
@@ -179,13 +176,11 @@ html {
 }
 
 .carousel-img {
-  max-width: 300px; /* Adjust this value as needed */
-  max-height: 600px; /* Adjust this value as needed */
-  object-fit: contain; /* Ensures the image maintains its aspect ratio */
-  margin: 0 auto; /* Centers the image horizontally */
+  max-width: 300px; 
+  max-height: 600px;
+  object-fit: contain; 
+  margin: 0 auto; 
 }
-
-/* experience */
 
 /* Experience Section */
 .experience-section {
@@ -220,32 +215,30 @@ html {
 .school-logo {
   width: 150px;
   height: 150px;
-  /* border: 5px solid #fff; */
   object-fit: cover;
-  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);   */
 }
 
 .bg-image {
-  background-image: url('./images/csulibrary.jpg'); /* Replace with your image path */
-  background-size: cover; /* Adjusts the size of the image to cover the entire container */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  color: white; /* Optional: Change text color for better visibility */
+  background-image: url('./images/csulibrary.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white; 
 }
 
 .bg-image2 {
-  background-image: url('./images/anhsbg.jpg'); /* Replace with your image path */
-  background-size: cover; /* Adjusts the size of the image to cover the entire container */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  color: white; /* Optional: Change text color for better visibility */
+  background-image: url('./images/anhsbg.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white; 
 }
 
 
 .school-info {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  padding: 20px; /* Add some padding for spacing */
-  border-radius: 8px; /* Optional: Rounded corners */
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px; 
+  border-radius: 8px; 
 }
 
 
@@ -254,13 +247,13 @@ html {
 .experience-images {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Space between images */
+  gap: 10px; 
 }
 
 .experience-images img {
-  width: 100%; /* Adjust based on your design */
-  max-width: 250px; /* Set a max width */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  max-width: 250px; 
+  height: auto; 
 }
 
 .experience-section h2,
@@ -269,7 +262,7 @@ html {
 .experience-section .period-covered,
 .experience-section .job-title,
 .experience-section .job-description {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add this line */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
 }
 
 
@@ -284,30 +277,30 @@ html {
 
 .project-item {
   margin-bottom: 20px;
-  border: 1px solid #ddd; /* Optional: Add a border */
-  transition: transform 0.3s; /* Smooth hover effect */
+  border: 1px solid #ddd; 
+  transition: transform 0.3s; 
 }
 
 .project-item:hover {
-  transform: scale(1.02); /* Slight zoom on hover */
+  transform: scale(1.02); 
 }
 
 .project-title {
-  font-size: 28px; /* Increase title size */
+  font-size: 28px; 
   font-weight: bold;
-  color: #343a40; /* Darker color for better contrast */
+  color: #343a40; 
 }
 
 .project-subtitle {
-  font-size: 20px; /* Subtitle size */
-  color: #6c757d; /* Lighter color */
+  font-size: 20px; 
+  color: #6c757d; 
   margin-bottom: 10px;
 }
 
 .project-description {
   margin-top: 10px;
-  font-size: 16px; /* Description size */
-  color: #495057; /* Darker grey */
+  font-size: 16px; 
+  color: #495057; 
 }
 
 .button-group {
@@ -315,27 +308,27 @@ html {
 }
 
 .btn {
-  padding: 10px 20px; /* Increase padding for buttons */
-  font-size: 16px; /* Font size for buttons */
-  transition: background-color 0.3s; /* Smooth background color transition */
+  padding: 10px 20px; 
+  font-size: 16px; 
+  transition: background-color 0.3s; 
 }
 
 .btn-primary {
-  background-color: #007bff; /* Primary button color */
-  border: none; /* Remove border */
+  background-color: #007bff; 
+  border: none; 
 }
 
 .btn-primary:hover {
-  background-color: #0056b3; /* Darker on hover */
+  background-color: #0056b3; 
 }
 
 .btn-secondary {
-  background-color: #6c757d; /* Secondary button color */
-  border: none; /* Remove border */
+  background-color: #6c757d; 
+  border: none; 
 }
 
 .btn-secondary:hover {
-  background-color: #5a6268; /* Darker on hover */
+  background-color: #5a6268;
 }
 
 .modal-content iframe {
@@ -348,36 +341,35 @@ html {
 
 
 .footer {
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  background: linear-gradient(135deg, #6a11cb, #2575fc); 
   color: #ffffff;
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 10px;
   text-align: center;
   padding: 20px;
   margin-top: 200px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .footer p {
-  margin: 0; /* Remove default margin */
+  margin: 0; /
 }
 
 .footer-links {
-  margin-top: 10px; /* Space between text and links */
+  margin-top: 10px; 
 }
 
 .footer a {
   text-decoration: none;
   margin: 0 10px;
-  color: #000; /* Change to your preferred color */
+  color: #000; 
+  margin-right: 5px;
 }
 
-.footer-links a i {
-  margin-right: 5px; /* Space between icon and text */
-}
+
 
 
 .footer a:hover {
-  color: #ffdd57; /* Change color on hover */
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  color: #ffdd57;
+  transform: scale(1.05); 
 }
 
