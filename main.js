@@ -20,7 +20,9 @@ function openModal(imgElement) {
 }
 
 function openDemo() {
-  // const demoModal = new bootstrap.Modal(document.getElementById('Adbot.html'));
-  // demoModal.show();
-  window.open('addbotproject/ADbot.html', '_blank');
+
+  const websiteURL = "https://addbot.netlify.app/";
+  document.querySelector('#demoModal iframe').src = websiteURL;
+  const modal = new bootstrap.Modal(document.getElementById('demoModal'));
+  modal.show();
 }
